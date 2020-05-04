@@ -15,6 +15,8 @@ const Layout = props => {
                     color: white;
                 }
             `}</style>
+
+            <style jsx>{`.container {display: flex; justify-content: center;}`}</style>
         </div>
     )
 }
