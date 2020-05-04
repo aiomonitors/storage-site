@@ -57,6 +57,7 @@ const Nav = () => {
                     width: 322px;
                     display: flex;
                     justify-content: space-between;
+                    display: none;
                 }
                 
                 .container .nav-links > a {
@@ -92,6 +93,14 @@ const Nav = () => {
                 .container .button .arrow {
                     margin-left: 10px;
                     color: #9C69E2;
+                }
+
+                @media screen and (min-width: 728px) {
+                    .container .nav-links {
+                        width: 322px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
                 }
             `}</style>
         </div>

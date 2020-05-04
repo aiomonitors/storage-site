@@ -23,7 +23,7 @@ const Headline = () => {
                 }
 
                 .container .text {
-                    width: 645px;
+                    width: 300px;
                     height: 464px;
                     text-align: left;
                     display: flex;
@@ -34,12 +34,12 @@ const Headline = () => {
                 }
                 
                 .container .text .heading {
-                    width: 645px;
+                    width: 300px;
                     height: 184px;
                     font-family: Helvetica;
                     font-style: normal;
                     font-weight: bold;
-                    font-size: 80px;
+                    font-size: 30px;
                     line-height: 110%;
                     display: flex;
                     align-items: center;
@@ -48,7 +48,7 @@ const Headline = () => {
                 }
 
                 .container .text .para {
-                    width: 380px;
+                    width: 300px;
                     height: 120px;
                     font-family: Avenir;
                     font-style: normal;
@@ -76,16 +76,47 @@ const Headline = () => {
                 }
 
                 .container .image {
-                    height: 468px;
-                    width: 885px;
+                    width: 300px;
+                    height: 100%;
                     background: url(/headerimg.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
                     position: relative;
-                    bottom: 60%;
+                    bottom: 40%;
                     left: 30%;
                     z-index: -1;
                     opacity: 0.5;
-                    background-size: contain;
-                    //border: 1px solid red;
+                }
+
+                @media screen and (min-width: 728px) {
+                    .container .text {
+                        width: 645px;
+                        height: 464px;
+                    }
+                    
+                    .container .text .heading {
+                        width: 645px;
+                        height: 184px;
+                        font-size: 80px;
+                    }
+    
+                    .container .text .para {
+                        width: 380px;
+                        height: 120px;
+                    }
+
+                    .container .image {
+                        height: 468px;
+                        width: 885px;
+                        background: url(/headerimg.png);
+                        position: relative;
+                        bottom: 60%;
+                        left: 30%;
+                        z-index: -1;
+                        opacity: 0.5;
+                        background-size: contain;
+                        //border: 1px solid red;
+                    }
                 }
             `}</style>
         </div>
