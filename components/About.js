@@ -21,6 +21,9 @@ const About = () => {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    max-width: 100%;
+                    overflow-x: hidden;
+                    overflow-y: hidden;
                 }
 
                 .card {

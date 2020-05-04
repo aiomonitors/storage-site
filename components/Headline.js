@@ -20,6 +20,9 @@ const Headline = () => {
                     height: calc(100vh - 160px);
                     //border: 1px solid red;
                     padding: 40px;
+                    max-width: 100%;
+                    overflow-x: hidden;
+                    overflow-y: hidden;
                 }
 
                 .container .text {

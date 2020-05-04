@@ -54,7 +54,7 @@ const Nav = () => {
                 }
 
                 .container .nav-links {
-                    width: 322px;
+                    width: 300px;
                     display: flex;
                     justify-content: space-between;
                     display: none;

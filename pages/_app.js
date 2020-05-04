@@ -22,7 +22,8 @@ class AppConfig extends App {
                         body {
                             min-height: 100vh;
                             height: auto;
-                            margin: 0 auto;
+                            margin: auto;
+                            width: 100%;
                             font-family: Avenir, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
                             background-color: #E5E5E5;
                             padding-top: 15px;
