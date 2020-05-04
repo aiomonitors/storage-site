@@ -91,7 +91,7 @@ const Headline = () => {
                     opacity: 0.5;
                 }
 
-                @media screen and (min-width: 728px) {
+                @media screen and (min-width: 1050px) {
                     .container .text {
                         width: 645px;
                         height: 464px;

@@ -13,8 +13,6 @@ const Features = () => {
             <div className="cards">
                 <Card src="/rectgreen.png"/>
                 <Card src="/rectpurp.png"/>
-            </div>
-            <div className="cards">
                 <Card src="/rectgreen.png"/>
                 <Card src="/rectpurp.png"/>
             </div>
@@ -25,6 +23,7 @@ const Features = () => {
                     flex-direction: column;
                     justify-content: flex-start;
                     align-items: center;
+                    padding-bottom: 30px;
                     //border: 1px solid blue;
                 }
                 .header {
@@ -39,7 +38,7 @@ const Features = () => {
                     font-family: Helvetica;
                     font-style: normal;
                     font-weight: bold;
-                    font-size: 40px;
+                    font-size: 25px;
                     line-height: 130%;
                     display: flex;
                     align-items: center;
@@ -48,7 +47,7 @@ const Features = () => {
                 }
 
                 .caption {
-                    width: 584px;
+                    width: 280px;
                     font-weight: 500;
                     font-size: 18px;
                     line-height: 160%;
@@ -57,12 +56,30 @@ const Features = () => {
                 }
 
                 .cards {
-                    height: 500px;
+                    max-width: 450px;
                     display: flex;
-                    flex-flow: row-wrap;
-                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    justify-content: center;
                     align-items: center;
+                    margin-top: 40px;
                     //border: 1px solid blue;
+                }
+
+                @media screen and (min-width: 728px) {
+                    .heading {
+                        font-size: 40px;
+                    }
+    
+                    .caption {
+                        width: 584px;
+                        font-weight: 500;
+                        font-size: 18px;
+                    }
+    
+                    .cards {
+                        max-width: 1200px;
+                        min-height: 500px;
+                    }
                 }
 
             

@@ -16,39 +16,30 @@ const Card = props => {
             </div>
             <style jsx>{`
                 .container {
-                    width: 531.29px;
+                    width: 300px;
                     height: 388px;
-                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     //border: 1px solid red;
                 }
 
                 .container .img {
-                    width: 232px;
-                    height: 211px;
-                    background: url(/imagecard.png);
-                    position: relative;
-                    top: 25%;
-                    left: 5%;
-                    z-index: 100;
-                    //border: 1px solid pink;
+                    display: none;
                 }
 
                 .container .text-container {
-                    width: 442px;
+                    width: 300px;
+                    height: 320px;
                     padding-top: 40px;
-                    padding-bottom: 40px;
-                    height: 358px;
-                    background: url(${props.src});
+                    margin: 10px;
+                    background-color: rgba(104,201,186, 0.3);
                     background-size: contain;
                     background-repeat: no-repeat;
-                    position: relative;
-                    left: 15%;
-                    bottom: 50%;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-end;
-                    z-index: 100;
-                    
+                    border-radius: 50px;
                 }
 
                 .container .text-container .heading {
@@ -91,6 +82,43 @@ const Card = props => {
                     background: url(/arrow.png);
                     background-size: contain;
                     margin-left: 10px;
+                }
+
+                @media screen and (min-width:768px) {
+                    .container {
+                        width: 531.29px;
+                        height: 388px;
+                        display: flex;
+                        margin-bottom: 40px;
+                        align-items: center;
+                        justify-content: center;
+                        //border: 1px solid red;
+                    }
+
+                    .container .img {
+                        width: 232px;
+                        height: 211px;
+                        background: url(/imagecard.png);
+                        position: relative;
+                        left: 15%;
+                        z-index: 100;
+                        display: initial;
+                        //border: 1px solid pink;
+                    }
+
+                    .container .text-container {
+                        width: 442px;
+                        height: 358px;
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+                        background: url(${props.src});
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        z-index: 100;
+                        //border: 1px solid blue;
+                        display: flex;
+                        justify-content: center;
+                    }
                 }
             `}</style>
         </div>

@@ -76,7 +76,7 @@ const About = () => {
                     color: #4B5D68;
                 }
 
-                @media screen and (min-width: 728px) {
+                @media screen and (min-width: 1050px) {
                     .container {
                         height: 100vh;
                         display: flex;

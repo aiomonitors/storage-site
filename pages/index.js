@@ -10,6 +10,7 @@ const Index = () => {
                 <Nav />
                 <Headline />
                 <About />
+                <Features />
             </div>
         </Layout>    
     )
