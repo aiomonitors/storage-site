@@ -21,7 +21,8 @@ const Card = props => {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    //border: 1px solid red;
+                    overflow-x: hidden;
+                    overflow-y: hidden;
                 }
 
                 .container .img {

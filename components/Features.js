@@ -32,6 +32,8 @@ const Features = () => {
                     flex-direction: column;
                     justify-content: space-between;
                     align-items: center;
+                    overflow-x: hidden;
+                    overflow-y: hidden;
                 }
 
                 .heading {
