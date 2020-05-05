@@ -5,9 +5,13 @@
   "license": "MIT",
   "dependencies": {
     "aos": "^2.3.4",
+    "flickity": "^2.2.1",
+    "jquery": "^3.5.0",
     "next": "^9.3.6",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-flickity-component": "^3.5.0",
+    "react-tilt": "^0.1.4"
   },
   "scripts": {
     "dev": "next",
